@@ -5,6 +5,10 @@ body {
 	margin: 0;
 }
 
+h1{
+	margin: 0;
+}
+
 .container {
 	position: relative;
 	height: 100vh;
@@ -12,6 +16,7 @@ body {
 }
 
 .pages {
+	background-color: grey;
 	position: relative;
 	overflow: hidden;
 	width: 100vw;
@@ -20,14 +25,16 @@ body {
 }
 
 .page {
-	display: flex;
+	/*display: flex;*/
 	height: 100vh;
 	visibility: hidden;
 	position: absolute;
+	z-index: 1;
 }
 
 .page1 {
 	background: aqua;
+	opacity: 0.5;
 }
 
 .page2 {
@@ -37,13 +44,14 @@ body {
 
 .page3 {
 	background: green;
+	left: -100%;
 }
 
 
 .page--current {
 	visibility: visible;
 	position: relative;
-	z-index: 100;
+	/*z-index: 100;*/
 }
 
 nav{
