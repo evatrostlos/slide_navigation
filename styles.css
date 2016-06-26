@@ -1,0 +1,78 @@
+html,
+body {
+	min-height: 100vh;
+	overflow-x: hidden;
+	margin: 0;
+}
+
+.container {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.pages {
+	position: relative;
+	overflow: hidden;
+	width: 100vw;
+	height: 100vh;
+	z-index: 0;
+}
+
+.page {
+	display: flex;
+	height: 100vh;
+	visibility: hidden;
+	position: absolute;
+}
+
+.page1 {
+	background: aqua;
+}
+
+.page2 {
+	background: blue;
+	top: 100%;
+}
+
+.page3 {
+	background: green;
+}
+
+
+.page--current {
+	visibility: visible;
+	position: relative;
+	z-index: 100;
+}
+
+nav{
+	color: white;
+	font-size: 3em;
+	font-weight: bolder;
+}
+
+.down, .left, .right{
+	padding: 0;
+}
+
+.down{
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	z-index: 10000;
+}
+
+.left{
+	position: absolute;
+	left: 50px;
+	top: 45%;
+	z-index: 10000;
+}
+
+.right{
+	position: absolute;
+	right: 50px;
+	top: 45%;
+	z-index: 10000;
+}
